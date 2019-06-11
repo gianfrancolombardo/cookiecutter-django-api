@@ -1,0 +1,11 @@
+{
+    "project_name": "Project 01",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "author_name": "GLombardo",
+    "open_source_license": [
+        "MIT",
+        "BSD",
+        "GPLv3",
+        "Not open source"
+      ]
+}
