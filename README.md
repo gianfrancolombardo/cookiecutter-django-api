@@ -52,7 +52,7 @@ POST    /post       Create
 GET     /post/123   Retrieve
 PUT     /post/123   Update
 DELETE  /post/123   Delete
-PATCH   /post/123   Parcial update
+PATCH   /post/123   Partial update
 ```
 
 ## Contributing
