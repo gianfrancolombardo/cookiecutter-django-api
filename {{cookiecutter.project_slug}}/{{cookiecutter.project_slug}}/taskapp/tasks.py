@@ -7,8 +7,7 @@ from django.template.loader import render_to_string
 from django.utils import timezone
 
 # Models
-from {{cookiecutter.project_slug}}.users.models import User
-from {{cookiecutter.project_slug}}.rides.models import Ride
+from {{cookiecutter.project_slug}}.users.models import users
 
 # Celery
 from celery.decorators import task, periodic_task

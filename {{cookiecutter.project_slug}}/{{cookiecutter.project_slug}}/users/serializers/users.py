@@ -11,7 +11,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework.validators import UniqueValidator
 
 # Models
-from {{cookiecutter.project_slug}}.users.models import User, Profile
+from {{cookiecutter.project_slug}}.users.models import User
 
 # Tasks
 from {{cookiecutter.project_slug}}.taskapp.tasks import send_confirmation_email

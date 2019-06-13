@@ -2,13 +2,17 @@
 
 Powered by [Cookiecutter](https://github.com/audreyr/cookiecutter) and inspired by [Pydanny's cookiecutter](https://github.com/pydanny/cookiecutter-django) and [Cride-platzi](https://github.com/pablotrinidad/cride-platzi) and with the goal of optimize our development processes, we are happy to introduce our Django projects boilerplate packed and ready to use with the following features:
 
-* **Django** 2.0.10 LTS
-* **Travis CI** for continuous integration
+* **Python** 3.6
+* **Django** 2.0.10
+* **Django REST Framework** 3.9.1
 * [**12 Factor**](https://12factor.net/) based settings
 * **PostgreSQL** as database engine
 * **Docker** as container engine
-* **User app** with [**JWT**](https://jwt.io/) ready
+* Optimized development and production settings
+* **User app** Comes with custom user app ready to go with [**JWT**](https://jwt.io/)
 * **Extra** app for example
+* Run tests with unittest or pytest
+* **Flake8** for Style Guide Enforcement
 
 ## Installation
 

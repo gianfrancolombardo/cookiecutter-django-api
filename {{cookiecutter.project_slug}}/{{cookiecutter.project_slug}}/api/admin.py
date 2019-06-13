@@ -3,7 +3,7 @@
 # Django
 from django.contrib import admin
 
-# Own
+# Models
 from {{cookiecutter.project_slug}}.api.models import Post
 
 @admin.register(Post)

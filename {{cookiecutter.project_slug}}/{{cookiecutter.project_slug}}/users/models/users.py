@@ -37,7 +37,7 @@ class User(BaseModel, AbstractUser):
 
     is_verified = models.BooleanField(
         'verified',
-        default=True,
+        default=False,
         help_text='Set to true when the user have verified its email address.'
     )
 

@@ -13,7 +13,6 @@ from rest_framework.permissions import (
 from {{cookiecutter.project_slug}}.users.permissions import IsAccountOwner
 
 # Serializers
-from {{cookiecutter.project_slug}}.circles.serializers import CircleModelSerializer
 from {{cookiecutter.project_slug}}.users.serializers import (
     AccountVerificationSerializer,
     UserLoginSerializer,
@@ -23,8 +22,6 @@ from {{cookiecutter.project_slug}}.users.serializers import (
 
 # Models
 from {{cookiecutter.project_slug}}.users.models import User
-from {{cookiecutter.project_slug}}.circles.models import Circle
-
 
 class UserViewSet(mixins.RetrieveModelMixin,
                   mixins.UpdateModelMixin,
@@ -77,17 +74,3 @@ class UserViewSet(mixins.RetrieveModelMixin,
         serializer.save()
         data = {'message': 'Congratulation, now go share some rides!'}
         return Response(data, status=status.HTTP_200_OK)
-
-    def retrieve(self, request, *args, **kwargs):
-        """Add extra data to the response."""
-        response = super(UserViewSet, self).retrieve(request, *args, **kwargs)
-        circles = Circle.objects.filter(
-            members=request.user,
-            membership__is_active=True
-        )
-        data = {
-            'user': response.data,
-            'circles': CircleModelSerializer(circles, many=True).data
-        }
-        response.data = data
-        return response
