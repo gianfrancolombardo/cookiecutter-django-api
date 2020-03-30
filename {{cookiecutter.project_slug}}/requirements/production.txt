@@ -9,3 +9,6 @@ django-storages[boto3]==1.7.1
 
 # Email
 django-anymail[mailgun]==5.0
+
+# AWS ALB ALLOWED_HOSTS for health check
+django-allow-cidr>=0.3.1
