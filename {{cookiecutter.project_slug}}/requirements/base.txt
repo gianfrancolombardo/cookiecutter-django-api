@@ -16,7 +16,7 @@ django-filter==2.0.0
 django-cors-headers >= 3.0.2
 
 # JWT
-pyjwt==1.7.1
+pyjwt==2.4.0
 
 # Passwords security
 argon2-cffi==18.3.0
