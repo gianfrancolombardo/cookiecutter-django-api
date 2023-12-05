@@ -10,7 +10,7 @@ from django.utils import timezone
 from {{cookiecutter.project_slug}}.users.models import users
 
 # Celery
-from celery.decorators import task, periodic_task
+from celery import shared_task
 
 # Utilities
 import jwt
@@ -30,7 +30,7 @@ def gen_verification_token(user):
     return token.decode()
 
 
-@task(name='send_confirmation_email', max_retries=3)
+@shared_task()
 def send_confirmation_email(user_pk):
     """Send account verification link to given user."""
     user = User.objects.get(pk=user_pk)

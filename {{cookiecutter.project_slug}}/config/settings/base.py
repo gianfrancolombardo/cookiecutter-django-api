@@ -174,3 +174,6 @@ REST_FRAMEWORK = {
 
 # Django CROS
 CORS_ORIGIN_WHITELIST = env.list('DJANGO_CORS_ORIGIN', default=[])
+
+# Django AutoFiled
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
