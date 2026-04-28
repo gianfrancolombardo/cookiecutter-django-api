@@ -2,13 +2,13 @@
 
 -r ./base.txt
 
-gunicorn==21.2.0
+gunicorn==25.3.0
 
 # Static files
-django-storages[boto3]==1.14.2
+django-storages[boto3]==1.14.6
 
 # Email
-django-anymail[mailgun]==10.2
+django-anymail[mailgun]==15.0
 
 # AWS ALB ALLOWED_HOSTS for health check
-django-allow-cidr==0.7.1
+django-allow-cidr==0.8.0

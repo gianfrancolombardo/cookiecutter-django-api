@@ -33,7 +33,7 @@ services:
       - ./.envs/.local/.postgres
 
   redis:
-    image: redis:7.2.3
+    image: redis:7.4-alpine
 
   celeryworker:
     <<: *django

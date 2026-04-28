@@ -1,33 +1,33 @@
-﻿# Base
+# Base
 python-slugify==8.0.1
-pillow==10.1.0
-psycopg==3.1.14 --no-binary psycopg
+pillow==11.1.0
+psycopg==3.3.3 --no-binary psycopg
 
 # Django
-django>=5.0.0
+django==5.2.13
 
 # Environment
-django-environ==0.11.2
+django-environ==0.13.0
 
 # Django REST Framework
-djangorestframework==3.14.0
-django-filter==23.4
-django-cors-headers == 4.3.1
+djangorestframework==3.17.1
+django-filter==25.2
+django-cors-headers == 4.7.0
 
 # JWT
-pyjwt==2.8.0
+pyjwt==2.12.1
 
 # Passwords security
-argon2-cffi==23.1.0
+argon2-cffi==25.1.0
 
 # Static files
-whitenoise==6.6.0
+whitenoise==6.12.0
 
 # Celery
-redis==5.0.1
-django-redis==5.4.0
+redis==7.4.0
+django-redis==6.0.0
 
-celery==5.3.6
-tornado==6.4
+celery==5.6.3
+tornado==6.5
 flower==2.0.1
 
